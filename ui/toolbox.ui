@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>toolBox</class>
+ <widget class="QToolBox" name="toolBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>110</width>
+    <height>624</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>110</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ToolBox</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="pageMaps">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>110</width>
+     <height>484</height>
+    </rect>
+   </property>
+   <attribute name="label">
+    <string>Maps</string>
+   </attribute>
+   <widget class="QToolButton" name="boundaryMap">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>90</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Boundary Map</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>80</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>mapButtons</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="heightMap">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>170</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Height Map</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>80</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>mapButtons</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="populationMap">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>250</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Population Map</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>80</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>mapButtons</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="loadMapButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>60</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveMapButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>60</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="generateMapButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>111</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generate</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="backgroundImage">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>330</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Background Image</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>80</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>mapButtons</string>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="pageField">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>110</width>
+     <height>484</height>
+    </rect>
+   </property>
+   <attribute name="label">
+    <string>Field</string>
+   </attribute>
+   <widget class="QToolButton" name="nodeTool">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Node</string>
+    </property>
+    <property name="text">
+     <string>Nod</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/nodeTool.png</normaloff>:/icons/nodeTool.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>fieldTools</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="wedgeTool">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Wedge</string>
+    </property>
+    <property name="text">
+     <string>Wed</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/wedgeTool.png</normaloff>:/icons/wedgeTool.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>fieldTools</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="centerTool">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Center</string>
+    </property>
+    <property name="text">
+     <string>Cen</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/centerTool.png</normaloff>:/icons/centerTool.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>fieldTools</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="regularTool">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Regular</string>
+    </property>
+    <property name="text">
+     <string>Reg</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/regular.png</normaloff>:/icons/regular.png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>fieldTools</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="pointerTool">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Pointer</string>
+    </property>
+    <property name="text">
+     <string>Ptr</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/normal_pointer2.png</normaloff>:/icons/normal_pointer2.png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>fieldTools</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="trisectorTool">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Trisector</string>
+    </property>
+    <property name="text">
+     <string>Tri</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/trisectorTool.png</normaloff>:/icons/trisectorTool.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>fieldTools</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="saddleTool">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>40</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Saddle</string>
+    </property>
+    <property name="text">
+     <string>Sad</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/saddleTool.png</normaloff>:/icons/saddleTool.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>fieldTools</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="focusTool">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Focus</string>
+    </property>
+    <property name="text">
+     <string>Foc</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/focusTool.png</normaloff>:/icons/focusTool.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>fieldTools</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="pageField_markerTool">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>70</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Seed Marker</string>
+    </property>
+    <property name="text">
+     <string>Mark</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/seedMarkerTool.png</normaloff>:/icons/seedMarkerTool.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>fieldTools</string>
+    </attribute>
+   </widget>
+   <widget class="QGroupBox" name="decayGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>91</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Decay</string>
+    </property>
+    <widget class="QSlider" name="heightDecay">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>30</y>
+       <width>22</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Height Decay</string>
+     </property>
+     <property name="tracking">
+      <bool>true</bool>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="invertedAppearance">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSlider" name="boundaryDecay">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>30</y>
+       <width>22</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Boundary Decay</string>
+     </property>
+     <property name="tracking">
+      <bool>false</bool>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="invertedAppearance">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSlider" name="userEditDecay">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>30</y>
+       <width>22</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>User-edit Decay</string>
+     </property>
+     <property name="tracking">
+      <bool>true</bool>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="invertedAppearance">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="weightGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>91</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Weights</string>
+    </property>
+    <widget class="QSlider" name="heightWeight">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Height Weight</string>
+     </property>
+     <property name="tracking">
+      <bool>true</bool>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="boundaryWeight">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Boundary Weight</string>
+     </property>
+     <property name="tracking">
+      <bool>true</bool>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="userEditWeight">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>74</y>
+       <width>71</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>User-edit Weight</string>
+     </property>
+     <property name="tracking">
+      <bool>true</bool>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="pageGraph">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>110</width>
+     <height>484</height>
+    </rect>
+   </property>
+   <attribute name="label">
+    <string>Graph</string>
+   </attribute>
+   <widget class="QToolButton" name="pageGraph_pointerTool">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Pointer</string>
+    </property>
+    <property name="text">
+     <string>Ptr</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/normal_pointer2.png</normaloff>:/icons/normal_pointer2.png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>graphTools</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="seedTool">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Seed</string>
+    </property>
+    <property name="text">
+     <string>Seed</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/seedTool.png</normaloff>:/icons/seedTool.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>graphTools</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="lineTool">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Trace L ine</string>
+    </property>
+    <property name="text">
+     <string>Line</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/traceLineTool.png</normaloff>:/icons/traceLineTool.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>graphTools</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="streamTool">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Trace Stream</string>
+    </property>
+    <property name="text">
+     <string>Strm</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/traceStreamTool.png</normaloff>:/icons/traceStreamTool.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>graphTools</string>
+    </attribute>
+   </widget>
+   <widget class="QToolButton" name="markerTool">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Seed Marker</string>
+    </property>
+    <property name="text">
+     <string>Mark</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../data/resources.qrc">
+      <normaloff>:/icons/seedMarkerTool.png</normaloff>:/icons/seedMarkerTool.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <attribute name="buttonGroup">
+     <string>graphTools</string>
+    </attribute>
+   </widget>
+   <widget class="QGroupBox" name="tracingParams_major">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>91</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Major Road Network Parameters</string>
+    </property>
+    <property name="title">
+     <string>Params/major</string>
+    </property>
+    <widget class="QDoubleSpinBox" name="distSample">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Separating Distance</string>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="minimum">
+      <double>0.001000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.000100000000000</double>
+     </property>
+     <property name="value">
+      <double>0.002000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="koefLookahead">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Look-ahead Distance Multiplier</string>
+     </property>
+     <property name="decimals">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.500000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="koefSegment">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Segment Length Multiplier</string>
+     </property>
+     <property name="decimals">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>3.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.500000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="koefTest">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Testing Distance Multipilier</string>
+     </property>
+     <property name="decimals">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.100000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.600000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="distSep">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Separating Distance</string>
+     </property>
+     <property name="keyboardTracking">
+      <bool>true</bool>
+     </property>
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="minimum">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.001000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.060000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="tracingParams_local">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>91</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Local Road Networks Parameters</string>
+    </property>
+    <property name="title">
+     <string>Params/local</string>
+    </property>
+    <widget class="QDoubleSpinBox" name="distSample_local">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Separating Distance</string>
+     </property>
+     <property name="decimals">
+      <number>4</number>
+     </property>
+     <property name="minimum">
+      <double>0.001000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.000100000000000</double>
+     </property>
+     <property name="value">
+      <double>0.002000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="koefLookahead_local">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Look-ahead Distance Multiplier</string>
+     </property>
+     <property name="decimals">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.500000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="koefSegment_local">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Segment Length Multiplier</string>
+     </property>
+     <property name="decimals">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>3.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>1.500000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="koefTest_local">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Testing Distance Multipilier</string>
+     </property>
+     <property name="decimals">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>0.100000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.600000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="distSep_local">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="toolTip">
+      <string>Separating Distance</string>
+     </property>
+     <property name="keyboardTracking">
+      <bool>true</bool>
+     </property>
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="minimum">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.001000000000000</double>
+     </property>
+     <property name="value">
+      <double>0.015000000000000</double>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="pagePreview">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>110</width>
+     <height>484</height>
+    </rect>
+   </property>
+   <attribute name="label">
+    <string>Preview</string>
+   </attribute>
+   <widget class="QGroupBox" name="viewingCoorsBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>91</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Viewing</string>
+    </property>
+    <widget class="QSlider" name="viewingRadiusSlider">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>22</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Viewing Distance</string>
+     </property>
+     <property name="statusTip">
+      <string/>
+     </property>
+     <property name="minimum">
+      <number>20</number>
+     </property>
+     <property name="maximum">
+      <number>200</number>
+     </property>
+     <property name="value">
+      <number>100</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="viewingAzimuthSlider">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>30</y>
+       <width>22</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Viewing Azimuth</string>
+     </property>
+     <property name="statusTip">
+      <string/>
+     </property>
+     <property name="minimum">
+      <number>5</number>
+     </property>
+     <property name="maximum">
+      <number>90</number>
+     </property>
+     <property name="value">
+      <number>45</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../data/resources.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>sliderValueChanged(int)</slot>
+ </slots>
+ <buttongroups>
+  <buttongroup name="mapButtons"/>
+  <buttongroup name="fieldTools"/>
+  <buttongroup name="graphTools"/>
+ </buttongroups>
+</ui>

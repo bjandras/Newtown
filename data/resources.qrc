@@ -1,0 +1,18 @@
+<!DOCTYPE RCC>
+<RCC>
+  <qresource prefix="/">
+    <file>icons/normal_pointer.png</file>
+    <file>icons/normal_pointer2.png</file>
+    <file>icons/regular.png</file>
+    <file>icons/centerTool.png</file>
+    <file>icons/nodeTool.png</file>
+    <file>icons/wedgeTool.png</file>
+    <file>icons/saddleTool.png</file>
+    <file>icons/trisectorTool.png</file>
+    <file>icons/focusTool.png</file>
+    <file>icons/seedMarkerTool.png</file>
+    <file>icons/seedTool.png</file>
+    <file>icons/traceStreamTool.png</file>
+    <file>icons/traceLineTool.png</file>
+  </qresource>
+</RCC>
